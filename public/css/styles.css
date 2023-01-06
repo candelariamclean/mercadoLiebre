@@ -32,10 +32,6 @@ header div.top-header p{
 
 header{
     background-color: #EAC926;
-    position: fixed;
-    top:0;
-    width: 100%;
-    z-index: 100;
 }
 
 header div.logo,
@@ -129,7 +125,6 @@ h3,
 
 section.banner img{
     width: 100%;
-    margin-top: 305px;
 }
 
 main{
@@ -218,4 +213,29 @@ article div.main-article{
     main section div.products article{
         width: 22%;
     }
+}
+
+main form{
+    top:300px;
+}
+
+input[type="submit" i]:hover {
+    background-color: #0022AA;
+
+}
+
+main section .fa-credit-card {
+    color:#1259c3;
+    }
+main section .fa-gift {
+        color:#1259c3;
+        }
+main section .fa-user-shield {
+            color:#1259c3;
+            }
+    
+.site-shopping-info{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
