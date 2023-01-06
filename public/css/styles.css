@@ -191,6 +191,10 @@ article div.main-article{
     main section article:hover .description{
         display:block;
     }
+    
+    main section article:hover .fa-truck{
+        transform: rotate(-0.25turn);
+        }
 
     main section div.products{
         display: flex;
