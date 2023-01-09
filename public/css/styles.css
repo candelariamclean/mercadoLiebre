@@ -174,45 +174,8 @@ article div.main-article{
     padding: 15px;
 }
 
-@media (min-width: 361px){
-    main section article .description{
-        display:none;
-    }
-
-    main section article:hover{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-
-    main section article:hover .description{
-        display:block;
-    }
-    
-    main section article:hover .fa-truck{
-        transform: rotate(-0.25turn);
-        }
-
-    main section div.products{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-    
-    main section div.products article{
-        width: 45%;
-    }
-
-    .price,
-    .discount{
-        width: 50%;
-    }
-}
-
-@media (min-width: 769px){
-    main section div.products article{
-        width: 22%;
-    }
+.navbar{
+    display:none;
 }
 
 main form{
@@ -234,8 +197,85 @@ main section .fa-user-shield {
             color:#1259c3;
             }
     
-.site-shopping-info{
+.container{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+main section article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+main section article:hover .description{
+    display:block;
+}
+
+main section article:hover .fa-truck{
+    transform: rotate(-0.25turn);
+    }
+
+main section div.products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+main section div.products article{
+    width: 45%;
+}
+
+.price,
+.discount{
+    width: 50%;
+}
+
+.site-shopping-info .info-slide {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 35px 45px 20px;
+    position: relative;
+    text-align: center;
+    background-color: white;
+}
+.site-shopping-info .info-slide {
+    float: left;
+    width: 33.3333333333%;
+}
+.info-slide h2 {
+    color: #4b4b4b;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 16px 0 0;
+}
+.info-slide p {
+    color: #999;
+    font-size: 15px;
+    line-height: 1.2;
+    margin: 4px 0 10px;
+}
+.info-slide>.img-container {
+    height: 55px;
+}
+@media (min-width: 361px){
+    main section article .description{
+        display:none;
+    }
+
+
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
+    .navbar{
+        display:contents;
+}
+.burger-menu{
+   display:none ;
+}
+}
 }
